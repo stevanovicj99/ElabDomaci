@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="slike/logo.png" type="img/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+
+    <title>SportAgora</title>
+</head>
+
+<body>
+    <div id="meni">
+        <a href="index.html"><img src="slike/logo.png" id="logo"></a>
+        <ul>
+            <a href="index.html">
+                <li>Početna</li>
+            </a>
+            <a href="treninzi.html">
+                <li>Treninzi</li>
+            </a>
+            <a href="cenovnik.html">
+                <li>Cenovnik</li>
+            </a>
+            <a href="registracija.html">
+                <li>Registracija</li>
+            </a>
+        </ul>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+    <h1 class="naslovi">REGISTRACIJA</h1>
+    <div id="centarreg">
+        <div id="levaregslika">
+
+        </div>
+
+        <div id="registracijadiv">
+            <h2>Postanite deo našeg tima!</h2>
+            <p>Unesite vaše podatke:</p><br>
+            <form id="registracija" name="registracija" method="post" onsubmit="return validacija();">
+                <div id="prvideo">
+                    <label for="ime">Ime</label><br>
+                    <input type="text" name="ime" size="30" id="ime" class="vel"><br><br><br><br>
+
+                    <label for="prezime">Prezime</label><br>
+                    <input type="text" name="prezime" size="30" id="prezime" class="vel"><br><br><br><br>
+
+                    <label for="datumrodjenja">Datum rođenja </label><br>
+                    <input type="date" name="datum" size="30" id="datumrodjenja" class="vel"><br><br>
+
+
+                    <input type="submit" value="Pošalji" class="btn" onclick="posaljiDugme()">
+
+                </div>
+                <div id="drugideo">
+                    <label for="email">E-mail adresa </label><br>
+                    <input type="email" name="email" size="30" id="email" class="vel"><br><br><br><br>
+
+                    <label for="paket">Izaberite paket </label><br>
+                    <select name="paket" id="sel" class="vel">
+                        <option></option>
+                        <option value="studentski" id="studentski" class="velr">Studentski paket</option>
+                        <option value="stantard" id="standard" class="velr">Standardni paket</option>
+                        <option value="personalni" id="perosnalni" class="velr">Personalni trener</option>
+                    </select><br><br><br><br>
+
+                    <label for="clanarina">Izaberite trajanje paketa </label><br>
+                    <input type="radio" name="clanarina" class="clanarina">1 mesec
+                    <input type="radio" name="clanarina" class="clanarina">3 meseca
+                    <input type="radio" name="clanarina" class="clanarina">6 meseci <br><br>
+
+                    <input type="reset" value="Obriši" class="btn" onclick="resetDugme();">
+                </div>
+            </form>
+        </div>
+
+        <div id="desnaregslika">
+        </div>
+    </div>
+
+
+
+
+    <div id="footer">
+
+        <img src="slike/logo.png" id="slika2">
+        <div id="nesto">
+            <h2>Radno vreme</h2>
+            <p id="par">
+                RADNIM DANIMA: 07:30 - 22:00h
+                <br><br>
+                SUBOTOM: 07:30 - 21:00h
+                <br><br>
+                NEDELJOM: 11:00 - 21:00h
+
+            </p>
+        </div>
+        <div id="nesto">
+            <h2>O nama</h2>
+            <p id="par"> Naša ekipa profesionalaca je uvek spremna da vas dočeka, sasluša i pruži
+                podršku. To je ekipa uz koju ćete se i zabaviti i dobiti željene rezultate.
+                Uz prvoklasnu opremu, efikasne fitnes programe, društvenu atmosferu i
+                instruktore koji su inspirisani fitnesom i orijentisani da vam pruže
+                sportski osećaj, bićete podstaknuti da dostignete željenu fizičku formu.
+            </p>
+        </div>
+
+        <div id="nesto">
+            <h2>Kontakt</h2>
+            <p id="par">
+                TEL: 061/12-12-122
+                <br><br>
+                ADRESA: Vojvode Stepe 97, 11000 Beograd
+                <br><br>
+                EMAIL: sportagora@gmail.com
+            </p>
+        </div>
+
+        <div id="donji">
+            <hr>
+            <br>
+            <p>Copyright © 2021 All Rights Reserved by SportAgora.</p>
+
+            <p id="dativr">Danas je: <script>
+                    var dat = new Date();
+                    var datum = dat.getDate() + "." + (dat.getMonth() + 1) + "." + dat.getFullYear() + ". ";
+                    document.write(datum);
+                </script>
+                i tačno je:
+                <script>
+                    var vr = new Date();
+                    var vreme = vr.getHours() + "h i " + vr.getMinutes() + " min.";
+                    document.write(vreme);
+                </script>
+            </p>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+
+</html>

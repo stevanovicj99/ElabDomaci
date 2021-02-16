@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="slike/logo.png" type="img/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <title>SportAgora</title>
+</head>
+
+<body>
+    <div id="meni">
+        <a href="index.html"><img src="slike/logo.png" id="logo"></a>
+        <ul>
+            <a href="index.html">
+                <li>Početna</li>
+            </a>
+            <a href="treninzi.html">
+                <li>Treninzi</li>
+            </a>
+            <a href="cenovnik.html">
+                <li>Cenovnik</li>
+            </a>
+            <a href="registracija.html">
+                <li>Registracija</li>
+            </a>
+        </ul>
+
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+    <h1 class="naslovi">Treninzi</h1>
+    <div id="centar">
+        <div id="grupni" class="treninzi">
+            <h1>Grupni trening</h1>
+            <br>
+            <p>➤Funkcionalni trening utiče na povećanje kondicije i snage, ubrzava metabolizam i sagorevanje kalorija.
+                <br><br>➤ Namenjen je vežbacima svih uzrasta koji žele bitnije da redukuju (smanje ili povećaju) svoju
+                telesnu
+                masu.<br><br>➤ Treninzi se održavaju u grupi od 5-8 vežbaca što omogućuje odličnu interakciju između
+                vežbača i trenera.
+            </p>
+            <p id="termini">Termini: Ponedeljak, sreda i petak od 19h.</p>
+        </div>
+        <div id="slike">
+            <img src="slike/slika4.jpg" class="trening">
+            <img src="slike/slika5.jpg" class="trening">
+            <img src="slike/slika6.jpg" class="trening">
+            <img src="slike/slika7.jpg" class="trening">
+            <img src="slike/slika8.jpg" class="trening">
+        </div>
+        <div id="personalni" class="treninzi">
+            <h1>Personalni</h1>
+            <br>
+            <p>
+                <b><i>Imati cilj je dobro ali imati cilj, znanje, podršku i plan je daleko bolje!</i></b><br>
+
+                ➤ Kao svi oni što imaju rezultate na kojima im zavide, dobićeš sopstvenog trenera koji će osmisliti i
+                voditi tvoj program. <br>
+                ➤ Personalni trener je uvek tu da izvuče ono najbolje iz tebe, da osmisli i vodi trening koji je
+                prilagođen baš tebi. On je tu da te usmeri, podrži i motiviše.
+                <br>
+                ➤ Treniraj sa trenerom 1 na 1 kao profesionalac.<br>
+                <b><i>Biti fit je način života! Biti fit je uživanje u životu! </i></b>
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <div id="footer">
+
+        <img src="slike/logo.png" id="slika2">
+        <div id="nesto">
+            <h2>Radno vreme</h2>
+            <p id="par">
+                RADNIM DANIMA: 07:30 - 22:00h
+                <br><br>
+                SUBOTOM: 07:30 - 21:00h
+                <br><br>
+                NEDELJOM: 11:00 - 21:00h
+
+            </p>
+        </div>
+        <div id="nesto">
+            <h2>O nama</h2>
+            <p id="par"> Naša ekipa profesionalaca je uvek spremna da vas dočeka, sasluša i pruži
+                podršku. To je ekipa uz koju ćete se i zabaviti i dobiti željene rezultate.
+                Uz prvoklasnu opremu, efikasne fitnes programe, društvenu atmosferu i
+                instruktore koji su inspirisani fitnesom i orijentisani da vam pruže
+                sportski osećaj, bićete podstaknuti da dostignete željenu fizičku formu.
+            </p>
+        </div>
+
+        <div id="nesto">
+            <h2>Kontakt</h2>
+            <p id="par">
+                TEL: 061/12-12-122
+                <br><br>
+                ADRESA: Vojvode Stepe 97, 11000 Beograd
+                <br><br>
+                EMAIL: sportagora@gmail.com
+            </p>
+        </div>
+
+        <div id="donji">
+            <hr>
+            <br>
+            <p>Copyright © 2021 All Rights Reserved by SportAgora.</p>
+
+            <p id="dativr">Danas je: <script>
+                    var dat = new Date();
+                    var datum = dat.getDate() + "." + (dat.getMonth() + 1) + "." + dat.getFullYear() + ". ";
+                    document.write(datum);
+                </script>
+                i tačno je:
+                <script>
+                    var vr = new Date();
+                    var vreme = vr.getHours() + "h i " + vr.getMinutes() + " min.";
+                    document.write(vreme);
+                </script>
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

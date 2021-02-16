@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="slike/logo.png" type="img/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+
+    <title>SportAgora</title>
+</head>
+
+<body>
+    <div id="meni">
+        <a href="index.html"><img src="slike/logo.png" id="logo"></a>
+        <ul>
+            <a href="index.html">
+                <li>Početna</li>
+            </a>
+            <a href="treninzi.html">
+                <li>Treninzi</li>
+            </a>
+            <a href="cenovnik.html">
+                <li>Cenovnik</li>
+            </a>
+            <a href="registracija.html">
+                <li>Registracija</li>
+            </a>
+        </ul>
+    </div>
+    <!-- ----------------------------------------------------------------- -->
+    <div id="nslika">
+        <p>We are not here to waste heart beats.</p>
+    </div>
+    <h1 class="naslovi">Cenovnik</h1>
+    <div id="centralni">
+        <div class="blokovi">
+            <h1 class="naslov">Studentski paket</h1>
+            <h2>2200 dinara</h2>
+            <ul>
+                <li>✔️ Neograničeno korišćenje teretane</li>
+                <li>✔️ Neograničeno korišćenje kardia</li>
+                <li>✔️ Neograničeno korišćenje svih grupnih treninga</li>
+                <li>✔️ Celodnevni termini</li>
+                <li>❌ Neograničeno korišćenje SPA sadržaja</li>
+                <li>✔️ Poklon vaučer za probni trening</li>
+                <li>❌ Personalni trener</li>
+                <li>✔️ Trajanje paketa 30 dana</li>
+
+            </ul>
+        </div>
+
+        <div class="blokovi">
+            <h1 class="naslov">Standardni paket</h1>
+            <h2>3000 dinara</h2>
+            <ul>
+                <li>✔️ Neograničeno korišćenje teretane</li>
+                <li>✔️ Neograničeno korišćenje kardia</li>
+                <li>✔️ Neograničeno korišćenje svih grupnih treninga</li>
+                <li>✔️ Celodnevni termini</li>
+                <li>✔️ Neograničeno korišćenje SPA sadržaja</li>
+                <li>✔️ Poklon vaučer za probni trening</li>
+                <li>❌ Personalni trener</li>
+                <li>✔️ Trajanje paketa 30 dana</li>
+
+            </ul>
+        </div>
+
+        <div class="blokovi">
+            <h1 class="naslov">Perosnalni trening</h1>
+            <h2>15000 dinara</h2>
+            <ul>
+                <li>✔️ Neograničeno korišćenje teretane</li>
+                <li>✔️ Neograničeno korišćenje kardia</li>
+                <li>✔️ Neograničeno korišćenje svih grupnih treninga</li>
+                <li>✔️ Celodnevni termini</li>
+                <li>✔️ Neograničeno korišćenje SPA sadržaja</li>
+                <li>✔️ Poklon vaučer za probni trening</li>
+                <li>✔️ Personalni trener</li>
+                <li>✔️ Trajanje paketa 30 dana</li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+
+        <img src="slike/logo.png" id="slika2">
+        <div id="nesto">
+            <h2>Radno vreme</h2>
+            <p id="par">
+                RADNIM DANIMA: 07:30 - 22:00h
+                <br><br>
+                SUBOTOM: 07:30 - 21:00h
+                <br><br>
+                NEDELJOM: 11:00 - 21:00h
+
+            </p>
+        </div>
+        <div id="nesto">
+            <h2>O nama</h2>
+            <p id="par"> Naša ekipa profesionalaca je uvek spremna da vas dočeka, sasluša i pruži
+                podršku. To je ekipa uz koju ćete se i zabaviti i dobiti željene rezultate.
+                Uz prvoklasnu opremu, efikasne fitnes programe, društvenu atmosferu i
+                instruktore koji su inspirisani fitnesom i orijentisani da vam pruže
+                sportski osećaj, bićete podstaknuti da dostignete željenu fizičku formu.
+            </p>
+        </div>
+
+        <div id="nesto">
+            <h2>Kontakt</h2>
+            <p id="par">
+                TEL: 061/12-12-122
+                <br><br>
+                ADRESA: Vojvode Stepe 97, 11000 Beograd
+                <br><br>
+                EMAIL: sportagora@gmail.com
+            </p>
+        </div>
+
+        <div id="donji">
+            <hr>
+            <br>
+            <p>Copyright © 2021 All Rights Reserved by SportAgora.</p>
+
+            <p id="dativr">Danas je: <script>
+                    var dat = new Date();
+                    var datum = dat.getDate() + "." + (dat.getMonth() + 1) + "." + dat.getFullYear() + ". ";
+                    document.write(datum);
+                </script>
+                i tačno je:
+                <script>
+                    var vr = new Date();
+                    var vreme = vr.getHours() + "h i " + vr.getMinutes() + " min.";
+                    document.write(vreme);
+                </script>
+            </p>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
